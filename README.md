@@ -2,8 +2,17 @@
 
 This repository contains the official implementation of GeoMag, a deep learning model for video motion magnification based on state space models.
 
+### Model Architecture
 
-![QuanRes](fig/QuanRes.png)
+![](fig/model.png)
+
+### Quantitative Results
+
+![](fig/QuanRes.png)
+
+### Qualitative Results
+
+![](fig/QuliaRes.png)
 
 ## Overview
 
@@ -75,6 +84,8 @@ python dataset.py --output_dir ./dataset --finalize_shuffle --shuffle_seed 42
 ### Geo-200K Dataset
 
 **Geo-200K** is a large-scale synthetic dataset for video motion magnification. This dataset contains 200K samples with diverse geometric transformations and will be made publicly available soon.
+
+ **Note:** The full Geo-200K dataset will be released after paper acceptance for use by fellow researchers.
 
 ### Dataset Structure
 
@@ -212,3 +223,6 @@ Evaluation metrics include:
 
 
 
+## Acknowledgements
+
+We sincerely thank projects [LBVMM](https://github.com/kaist-ami/Deep-Motion-Mag-Pytorch), [STB-VMM](https://github.com/RLado/STB-VMM), and [Mamba](https://github.com/state-spaces/mamba) for providing their open-source resources.
