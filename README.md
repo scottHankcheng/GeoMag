@@ -2,18 +2,6 @@
 
 This repository contains the official implementation of GeoMag, a deep learning model for video motion magnification based on state space models.
 
-### Model Architecture
-
-![](fig/model.png)
-
-### Quantitative Results
-
-![](fig/QuanRes.png)
-
-### Qualitative Results
-
-![](fig/QuliaRes.png)
-
 ## Overview
 
 Video Motion Magnification (VMM) reveals imperceptible dynamics but often struggles with structural inconsistencies under complex geometric transformations. Existing models
@@ -28,6 +16,20 @@ synthetic dataset, Geo-200K, is established, explicitly constructed
 to incorporate rich geometric transformations. Extensive experiments demonstrate that GeoMag significantly outperforms
 state-of-the-art methods in both visual fidelity and computational efficiency, robustly magnifying complex motions while
 eliminating artifacts.
+
+### Model Architecture
+
+![](fig/model.png)
+
+### Quantitative Results
+
+![](fig/QuanRes.png)
+
+### Qualitative Results
+
+![](fig/QuliaRes.png)
+
+
 
 
 ## Installation
