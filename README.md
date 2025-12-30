@@ -12,7 +12,7 @@ generally face a trade-off between the lack of global context in
 CNNs and the prohibitive computational costs of Transformers.
 Furthermore, current training protocols relying on simple linear
 motions fail to capture real-world complexity. To address these
-challenges, we propose GeoMag, a novel framework leveraging
+challenges, this work proposes GeoMag, a novel framework leveraging
 State Space Models to achieve global spatial consistency with
 linear complexity. To bridge the domain gap, a large-scale
 synthetic dataset, Geo-200K, is established, explicitly constructed
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### Synthetic Dataset Generation
 
-We provide a synthetic dataset generation script (`dataset.py`) to create training data with rich geometric transformations. The script requires background images list (`--bg_txt`) and foreground images with masks list (`--fg_txt`, format: `fg_path mask_path` per line).
+A synthetic dataset generation script (`dataset.py`) is provided to create training data with rich geometric transformations. The script requires background images list (`--bg_txt`) and foreground images with masks list (`--fg_txt`, format: `fg_path mask_path` per line).
 
 ```bash
 python dataset.py \
@@ -74,7 +74,7 @@ python dataset.py --output_dir ./dataset --finalize_shuffle --shuffle_seed 42
 
 ### Geo-200K Dataset
 
-We are preparing to release **Geo-200K**, our own large-scale synthetic dataset for video motion magnification. This dataset contains 200K samples with diverse geometric transformations and will be made publicly available soon.
+**Geo-200K** is a large-scale synthetic dataset for video motion magnification. This dataset contains 200K samples with diverse geometric transformations and will be made publicly available soon.
 
 ### Dataset Structure
 
